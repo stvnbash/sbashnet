@@ -6,7 +6,8 @@ import styles from '../styles/Home.module.css'
 
 export default function Index() {
     return (
-        <div className='container mx-auto bg-black h-screen text-white'>
+        // <div className='container mx-auto bg-black h-screen text-white'>
+        <div className=''>
             <Intro />
         </div>
     )
