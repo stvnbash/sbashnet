@@ -7,7 +7,7 @@ import Socials from '../components/Socials'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className='h-screen relative'>
+    <div className='min-h-screen flex flex-grow flex-col justify-between'>
 
       <div className='max-w-5xl mx-auto py-10'>
 
@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </div >
 
       {/* Footer */}
-      <div className='absolute w-full bottom-0'>
+      <div className=' sticky  z-50'>
         <Footer />
       </div>
     </div>
