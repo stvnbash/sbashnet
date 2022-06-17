@@ -1,3 +1,12 @@
+## Portfolio Examples for inspiration
+- https://hxrsh.in/
+- https://leerob.io/
+- https://manuarora.in/
+- https://simple-developer-portfolio-website.vercel.app/
+- https://www.freecodecamp.org/news/how-to-build-a-portfolio-site-with-nextjs-tailwindcss/
+- https://jarin.me/
+
+---
 Success! Created sbashnet at C:\Users\Bash\Documents\sbashnet
 Inside that directory, you can run several commands:
 
