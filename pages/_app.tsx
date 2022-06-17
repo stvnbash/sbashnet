@@ -9,7 +9,7 @@ import Footer1 from '../components/Footer1'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className='min-h-screen flex flex-col justify-between'>
-      {/* <Navbar /> */}
+      <Navbar />
       {/* <main className='max-w-3xl mx-auto py-10 px-10'> */}
       {/* <main className='pt-2 md:pt-4 sm:px-10 bg-slate-200 overflow-y-auto flex flex-grow flex-col justify-between z-10 h-0'> */}
       {/* <main className='max-w-3xl mx-auto p-10 h-0 flex flex-grow flex-col'> */}
