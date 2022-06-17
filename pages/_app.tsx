@@ -4,38 +4,50 @@ import Head from 'next/head'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Socials from '../components/Socials'
+import Footer1 from '../components/Footer1'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className='min-h-screen flex flex-grow flex-col justify-between'>
-
-      <div className='max-w-5xl mx-auto py-10'>
-
-        {/* Header */}
-        <div className='flex'>
-          <div className='flex-auto'>
-            <Navbar />
-          </div>
-          <Socials />
-        </div>
-
-        {/* Body */}
-        <div className=''>
-          <Component {...pageProps} />
-        </div>
-
-
-      </div >
-
-      {/* Footer */}
-      <div className=' sticky  z-50'>
-        <Footer />
-      </div>
+    <div className='min-h-screen flex flex-col justify-between'>
+      {/* <Navbar /> */}
+      {/* <main className='max-w-3xl mx-auto py-10 px-10'> */}
+      {/* <main className='pt-2 md:pt-4 sm:px-10 bg-slate-200 overflow-y-auto flex flex-grow flex-col justify-between z-10 h-0'> */}
+      {/* <main className='max-w-3xl mx-auto p-10 h-0 flex flex-grow flex-col'> */}
+      <main className='max-w-3xl mx-auto p-10'>
+        <Component {...pageProps} />
+      </main>
+      <Footer1 />
     </div>
   )
 }
 
 export default MyApp
+
+{/* <div className='min-h-screen flex flex-grow flex-col justify-between'>
+
+  <div className='max-w-5xl mx-auto py-10'>
+
+    // /* Header 
+    <div className='flex'>
+      <div className='flex-auto'>
+        <Navbar />
+      </div>
+      <Socials />
+    </div>
+
+    // /* Body 
+    <div className=''>
+      <Component {...pageProps} />
+    </div>
+
+
+  </div >
+
+  // /* Footer 
+  <div className=' sticky  z-50'>
+    <Footer />
+  </div>
+</div> */}
 
 {/* Working with animated background - with no svg waves in header or footer
 <Head>
