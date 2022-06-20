@@ -5,15 +5,15 @@ export default function NotFoundPage() {
             <p>Projects coming soon!</p>
             <br />
             <ul>
-                <li>MyECR</li>
+                {/* <li>MyECR</li> */}
                 {/* Technologies used: NextJS, NextAuth, Tailwind CSS*/}
-                <li>COVID Alert</li>
+                {/* <li>COVID Alert</li> */}
                 {/* Technologies used: Python, Cron job, SQL, REST APIs, JSON, Web Scraping, SMTP via Gmail to programmatically send emails*/}
-                <li>Attendance Alert</li>
+                {/* <li>Attendance Alert</li> */}
                 {/* Technologies used: Python, Cron job, SQL, REST APIs, JSON, SMTP via Gmail to programmatically send emails */}
-                <li>Mailchimp Integration</li>
+                {/* <li>Mailchimp Integration</li> */}
                 {/* Technologies used: Python, Cron job, SQL, REST APIs, Mailchimp API */}
-                <li>Intranet Websites</li>
+                {/* <li>Intranet Websites</li> */}
                 {/* Google Sites; although not involving code, I am highlighting this project to showcase my ability to organize content and create clear, concise, and effective documentaiton and tutorials.  */}
             </ul>
         </div>

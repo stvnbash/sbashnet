@@ -3,8 +3,18 @@ import { motion } from 'framer-motion'
 import Link from "next/link";
 
 export default function Socials() {
+    const variants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                delayChildren: 0.5,
+                staggerChildren: 0.2,
+            },
+        },
+    }
     return (
-        <motion.div className='flex' >
+        <motion.div className='flex' variants={variants}>
             {[
                 {
                     aria: 'Linkedin',
@@ -40,7 +50,7 @@ export default function Socials() {
                         className='mr-5 hover:text-yellow1'
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 0.8 }}
-                        
+
                         aria-label={link.aria}
                     >
                         <link.icon size={25} />
