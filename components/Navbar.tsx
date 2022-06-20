@@ -19,7 +19,9 @@ export default function Navbar() {
                     <NavLink title="Projects" url="/projects" />
                     <NavLink title="Activism" url="/activism" />
                 </div>
-                {!onIndexPage ? <Socials /> : ''}
+                <div className="hidden sm:inline-block">
+                    {!onIndexPage ? <Socials /> : ''}
+                </div>
             </div>
         </div>
     )

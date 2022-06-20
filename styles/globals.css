@@ -18,4 +18,14 @@ a {
   box-sizing: border-box;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #FFFCEB;
+  background: #09798C;
+}
+
+::selection {
+  color: #FFFCEB;
+  background: #09798C;
+}
+
 @tailwind utilities;
