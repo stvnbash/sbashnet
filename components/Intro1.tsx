@@ -28,7 +28,7 @@ export default function Intro() {
                 {/* <h1 className='text-5xl sm:text-6xl lg:text-8xl font-bold py-3 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500'>Steven Bash</h1> */}
                 <motion.h1 className='text-5xl sm:text-6xl lg:text-8xl font-bold py-3 text-transparent bg-clip-text bg-gradient-to-r from-yellowgreen1 to-turquoise1'>Steven Bash</motion.h1>
                 {/* I strive to create impactful change and strategize for organizational efficiency.   */}
-                <motion.h3 className='text-xl sm:text-2xl lg:text-4xl'>I study Computer Science at UCLA.</motion.h3>
+                <motion.h2 className='text-xl sm:text-2xl lg:text-4xl'>I study Computer Science at UCLA.</motion.h2>
                 <br />
                 <Socials />
             </motion.div>

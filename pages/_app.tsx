@@ -8,10 +8,12 @@ import Footer1 from '../components/Footer1'
 import Navbar1 from '../components/Navbar1'
 import NextNProgress from "nextjs-progressbar";
 import { useState, useEffect } from 'react';
+import Meta from '../components/Meta'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className='min-h-screen flex flex-col justify-between bg-navy1 text-text1 '>
+      <Meta />
       <NextNProgress color="#0CE8C7" />
       <div className='fixed w-[20vw] left-0 top-24 lg:top-0 z-0'>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1600" preserveAspectRatio="xMaxYMax slice"><g transform="scale(2.099737532808399)"><rect x="0" y="0" width="476.25" height="762" fill="#060950" /><g transform="translate(0,95.25) scale(4.7625) rotate(0)"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z" fill="#ff7a6c" /></g><g transform="translate(95.25,95.25) scale(4.7625) rotate(0)"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z" fill="#0CE8C7" /></g><circle cx="142.875" cy="333.375" r="47.625" fill="#FFDA01" /><circle cx="47.625" cy="428.625" r="47.625" fill="#d0b0ff" /><g transform="translate(95.25,381) scale(4.7625) rotate(0)"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z" fill="#ff7a6c" /></g><circle cx="142.875" cy="523.875" r="47.625" fill="#d0b0ff" /><circle cx="142.875" cy="619.125" r="47.625" fill="#0CE8C7" /></g></svg>
