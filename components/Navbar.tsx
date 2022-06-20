@@ -17,7 +17,7 @@ export default function Navbar() {
                 <div className='relative z-10 flex-auto'>
                     <NavLink title="Home" url="/" />
                     <NavLink title="Projects" url="/projects" />
-                    <NavLink title="Activism" url="/activism" />
+                    {/* <NavLink title="Activism" url="/activism" /> */}
                 </div>
                 <div className="hidden sm:inline-block">
                     {!onIndexPage ? <Socials /> : ''}
