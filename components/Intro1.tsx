@@ -18,10 +18,12 @@ export default function Intro() {
                 // type: 'tween',
                 // duration: 1,
                 // delay: 2.75,
+                // type: "spring",
+                // bounce: .4,
                 delay: 3.0,
                 when: "beforeChildren",
-                delayChildren: 0.1,
-                staggerChildren: 0.3,
+                delayChildren: 0.0,
+                staggerChildren: 0.0,
             }
         }
     }
