@@ -33,7 +33,9 @@ export default function Intro() {
                 {/* Hello, world!  I am */}
                 <TypeIt options={{ speed: 75, deleteSpeed: 50, lifeLike: true, cursor: true, waitUntilVisible: false, cursorSpeed: 1500 }}
                     getBeforeInit={(instance) => {
-                        instance.type("Hello, wordl").pause(336).delete(2).pause(336).type("ld!  I am ");
+                        // instance.type("Hello, wordl").pause(336).delete(2).pause(336).type("ld!  I am ");
+                        instance.type("Hello, wodr").pause(336).delete(2).pause(336).type("rld!  I am ");
+                        // instance.type("Hello, I ").pause(336).delete(2).pause(336).type("world!  I am ");
                         // instance.type("H").pause(232).type("e").pause(121).type("l").pause(159).type("l")
                         // .pause(185).type("o").pause(209).type(",").pause(71).type(" ").pause(440).type("w")
                         // .pause(113).type("o").pause(136).type("r").pause(256).type("d").pause(135).type("l")
