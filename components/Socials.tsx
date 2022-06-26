@@ -15,7 +15,7 @@ export default function Socials() {
         },
     }
     return (
-        <motion.div className='flex' variants={variants}>
+        <motion.div className='flex gap-5' variants={variants}>
             {[
                 {
                     aria: 'Linkedin',
@@ -53,7 +53,8 @@ export default function Socials() {
                         href={link.href}
                         target='_blank'
                         rel='noreferrer'
-                        className='mr-5 hover:text-yellow1'
+                        // className='mr-5 hover:text-yellow1'
+                        className=' hover:text-yellow1'
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 0.8 }}
 
