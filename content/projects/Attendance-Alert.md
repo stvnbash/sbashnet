@@ -1,5 +1,7 @@
 ---
 title: Attendance Alert
 date: 2021-12-24
+description: hello
+id: 3
 ---
 Technologies used: Python, Cron job, SQL, REST APIs, JSON, SMTP via Gmail to programmatically send emails
