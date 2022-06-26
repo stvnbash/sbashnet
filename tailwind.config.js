@@ -33,7 +33,7 @@ module.exports = {
 
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp"), require('@tailwindcss/typography'),],
 }
 
 // This custom color pallette was developed with Adobe color to ensure accessibility for both color blind users and contrast between text and background colors.

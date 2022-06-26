@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.0",
     "contentlayer": "^0.2.5",
     "date-fns": "^2.28.0",
     "framer-motion": "^6.3.11",
@@ -21,6 +22,7 @@
     "typeit-react": "^2.5.1-alpha.0"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.2",
     "@types/node": "17.0.42",
     "@types/react": "18.0.12",
     "@types/react-dom": "18.0.5",

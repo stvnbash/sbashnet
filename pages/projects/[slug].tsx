@@ -33,6 +33,7 @@ export default function PostLayout({ post }:any) {
         </div>
         <div className="mb-6 text-center">
           <h1 className="mb-1 text-3xl font-bold">{post.title}</h1>
+          <p className='text-lg'>{post.description}</p>
           {/* <time dateTime={post.date} className="text-sm text-slate-600">
             {format(parseISO(post.date), 'LLLL d, yyyy')}
           </time> */}

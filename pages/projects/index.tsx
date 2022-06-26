@@ -14,11 +14,10 @@ export async function getStaticProps() {
 function PostCard(post: any) {
     return (
         <Link href={post.url}>
-            <a className="font-bold p-6 rounded-3xl text-turquoise1 hover:text-yellow1 bg-[#290066] hover:bg-[#4100A3] transition-all">
+            <a className="group font-bold p-6 rounded-3xl text-turquoise1 hover:text-yellow1 bg-[#290066] hover:bg-[#4100A3] transition-all">
                 <h1 className='text-2xl'>{post.title}</h1>
                 <div className="text-text1">
-                    <h2 className="text-xl font-normal">{post.description}
-                    </h2>
+                    <h2 className="text-lg font-normal line-clamp-4">{post.description}</h2>
                 </div>
             </a>
         </Link>
