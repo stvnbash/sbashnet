@@ -1,6 +1,6 @@
 import Link from "next/link";
-import NavLink from "./NavLink";
-import Socials from "./Socials";
+import NavLink from "../NavLink";
+import Socials from "../Socials";
 import { useRouter } from "next/router";
 
 

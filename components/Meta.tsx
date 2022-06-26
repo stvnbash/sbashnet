@@ -29,6 +29,6 @@ export default function Meta({ title, keywords, description }: {title: string, k
 
 Meta.defaultProps = {
     title: 'Steven Bash',
-    keywords: 'tech, programming, jav',
+    keywords: 'tech, technology, programming, programmer, computer science',
     description: "Steven Bash",
 }

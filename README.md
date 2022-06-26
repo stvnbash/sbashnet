@@ -1,6 +1,11 @@
 ## Portfolio Examples for inspiration
 - https://hxrsh.in/
 - https://marco.how
+- https://macarthur.me/
+- https://jakq277.github.io/
+- https://tomasmaillo.com/
+- https://nes.im/?recursion=true
+- https://styfle.dev/
 - https://leerob.io/
 - https://manuarora.in/
 - https://simple-developer-portfolio-website.vercel.app/

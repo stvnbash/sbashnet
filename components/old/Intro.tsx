@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image'
-import Socials from './Socials';
+import Socials from '../Socials';
 
 export default function Intro() {
     return (

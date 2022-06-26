@@ -1,4 +1,5 @@
 import { SiTwitter, SiInstagram, SiGithub, SiLinkedin, SiTelegram, SiStackoverflow } from "react-icons/si";
+import { IoLogoVenmo } from "react-icons/io5";
 import { motion } from 'framer-motion'
 import Link from "next/link";
 
@@ -40,6 +41,11 @@ export default function Socials() {
                     aria: 'Telegram',
                     icon: SiTelegram,
                     href: 'https://t.me/stevenbash',
+                },
+                {
+                    aria: 'Venmo',
+                    icon: IoLogoVenmo,
+                    href: 'https://venmo.com/stvnbash',
                 },
             ].map((link, index) => (
                 <Link href={link.href} key={index} passHref>
