@@ -16,7 +16,7 @@ export default function Navbar() {
             <div className="flex flex-col items-center sm:flex-row max-w-3xl lg:max-w-4xl xl:max-w-5xl pt-10 px-10 mx-auto">
                 <div className='relative z-10 flex-auto flex gap-5'>
                     <NavLink title="Home" url="/" />
-                    <NavLink title="Projects" url="/projects" />
+                    <NavLink title="Recent Projects" url="/projects" />
                     {/* <NavLink title="Activism" url="/activism" /> */}
                 </div>
                 <div className="relative z-10 flex-auto text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellowgreen1 to-turquoise1">

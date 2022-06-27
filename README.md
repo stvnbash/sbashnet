@@ -4,6 +4,7 @@
 - https://macarthur.me/
 - https://jakq277.github.io/
 - https://tomasmaillo.com/
+- https://shellbear.me/
 - https://nes.im/?recursion=true
 - https://styfle.dev/
 - https://leerob.io/
