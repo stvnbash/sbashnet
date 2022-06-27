@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { format, parseISO } from 'date-fns'
 import { allPosts } from 'contentlayer/generated'
 import Meta from 'components/Meta'
+import Modal from 'react-modal'
+import { useRouter } from 'next/router'
 
 export async function getStaticPaths() {
   const paths = allPosts.map((post) => post.url)
@@ -22,8 +24,10 @@ export async function getStaticProps({ params }:any) {
 }
 
 export default function PostLayout({ post }:any) {
+  const router = useRouter()
+
   return (
-    <>
+    <Modal isOpen={true} onRequestClose={() => router.push('/projects')} contentLabel="Project modal" className="">
       <Meta title={post.title} />
       <article className="mx-auto max-w-2xl py-16">
         <div className="mb-6 text-center">
@@ -40,7 +44,7 @@ export default function PostLayout({ post }:any) {
         </div>
         <div className="cl-post-body" dangerouslySetInnerHTML={{ __html: post.body.html }} />
       </article>
-    </>
+    </Modal>
   )
 }
 
