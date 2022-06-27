@@ -27,9 +27,14 @@ export default function PostLayout({ post }:any) {
   const router = useRouter()
 
   return (
-    <Modal isOpen={true} onRequestClose={() => router.push('/projects')} contentLabel="Project modal" className="">
+    <Modal isOpen={true} onRequestClose={() => router.push('/projects')} contentLabel="Project modal"
+    style={{
+      overlay: {
+        backgroundColor: 'rgba(55, 55, 55, 0.75)',
+      }
+      }}>
       <Meta title={post.title} />
-      <article className="mx-auto max-w-2xl py-16">
+      <article className="mx-auto max-w-2xl py-16 bg-red-400">
         <div className="mb-6 text-center">
           <Link href="/projects">
             <a className="text-center text-sm font-bold uppercase text-turquoise1 hover:text-yellow1 transition-all">Go Back</a>
