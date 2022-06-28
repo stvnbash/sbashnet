@@ -23,6 +23,8 @@ export async function getStaticProps({ params }:any) {
   }
 }
 
+Modal.setAppElement('#__next')
+
 export default function PostLayout({ post }:any) {
   const router = useRouter()
 

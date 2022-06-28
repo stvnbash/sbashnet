@@ -33,6 +33,7 @@ export default function Projects({ posts }: any) {
                     <PostCard key={idx} {...post} />
                 ))}
             </div>
+            <div id="react-modals"></div>
         </div>
     )
 }
