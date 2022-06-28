@@ -29,12 +29,19 @@ export default function PostLayout({ post }:any) {
   const router = useRouter()
 
   return (
-    <Modal isOpen={true} onRequestClose={() => router.push('/projects')} contentLabel="Project modal" className="text-text1 my-24 m-10 md:m-24 p-10 bg-slate-600 h-[80vh] rounded-3xl overflow-y-auto"
-    style={{
-      overlay: {
-        backgroundColor: 'rgba(0, 0, 0, 0.75)',
-      }
-      }}>
+    <Modal
+      isOpen={true} onRequestClose={() => router.push('/projects')} 
+      contentLabel="Project modal" 
+      role={'Project Description'} 
+      // overlayRef={node => (this.overlayRef = node)}
+      // contentRef={node => (this.contentRef = node)}
+      className="text-text1 max-w-5xl sm:mx-auto my-24 m-10 md:my-24 p-10 bg-slate-600 h-[80vh] rounded-3xl overflow-y-auto"
+      style={{
+        overlay: {
+          backgroundColor: 'rgba(0, 0, 0, 0.75)',
+        }
+      }}
+      >
       <Meta title={post.title} />
       {/* <article className="mx-auto max-w-2xl py-16 bg-red-400 w-full h-full"> */}
       <article className="mx-auto py-16  w-full h-full">

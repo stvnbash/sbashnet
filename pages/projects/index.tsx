@@ -27,13 +27,13 @@ function PostCard(post: any) {
 export default function Projects({ posts }: any) {
     return (
         <div className='mb-auto'>
+            <div id="__projects-modals"></div>
             <h1 className='text-5xl mb-10 font-bold'>My Projects</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
                 {posts.map((post: any, idx: any) => (
                     <PostCard key={idx} {...post} />
                 ))}
             </div>
-            <div id="react-modals"></div>
         </div>
     )
 }
