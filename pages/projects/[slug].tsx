@@ -35,7 +35,11 @@ export default function PostLayout({ post }:any) {
       role={'Project Description'} 
       // overlayRef={node => (this.overlayRef = node)}
       // contentRef={node => (this.contentRef = node)}
+<<<<<<< HEAD
       className="text-text1 max-w-2xl sm:mx-auto my-24 m-10 md:my-24 p-10 bg-slate-600 h-[80vh] rounded-3xl overflow-y-auto"
+=======
+      className="text-text1 max-w-5xl sm:mx-auto my-24 m-10 md:my-24 p-10 bg-[#290066] h-[80vh] rounded-3xl overflow-y-auto"
+>>>>>>> d957123d5835344b51d4262e05ddea77001ec64d
       style={{
         overlay: {
           // backgroundColor: 'rgba(0, 0, 0, 0.75)',
