@@ -9,8 +9,13 @@ import Navbar1 from '../components/old/Navbar1'
 import NextNProgress from "nextjs-progressbar";
 import { useState, useEffect } from 'react';
 import Meta from '../components/Meta'
+import { AnimatePresence } from "framer-motion"
+import { useRouter } from 'next/router'
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter()
+  // console.log(1, router.asPath)
+  // console.log(2, router.route)
   return (
     <div className='min-h-screen flex flex-col justify-between bg-navy1 text-text1 '>
       <Meta />
@@ -33,7 +38,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       {/* <main className='px-[20vw] p-10'> */}
       {/* <main className='max-w-3xl mx-auto p-10 h-0 flex flex-grow flex-col'> */}
       <main className='max-w-5xl mx-auto p-10 text-lg z-10'>
-        <Component {...pageProps} />
+        <AnimatePresence exitBeforeEnter>
+          <Component {...pageProps} />
+          {/* <Component {...pageProps} key={router.asPath} /> */}
+        </AnimatePresence>
       </main>
       <Footer1 />
     </div>

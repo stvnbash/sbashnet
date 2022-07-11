@@ -30,6 +30,10 @@ export const Post = defineDocumentType(() => ({
       type: 'string',
       resolve: (post) => `/projects/${post._raw.flattenedPath}`,
     },
+    queryString: {
+      type: 'string',
+      resolve: (post) => `/projects/?project=${post._raw.flattenedPath}`,
+    },
   },
 }))
 

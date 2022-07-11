@@ -16,12 +16,14 @@ export default function Navbar() {
             <div className="flex flex-col items-center sm:flex-row max-w-3xl lg:max-w-4xl xl:max-w-5xl pt-10 px-10 mx-auto">
                 <div className='relative z-10 flex-auto flex gap-5'>
                     <NavLink title="Home" url="/" />
-                    <NavLink title="Recent Projects" url="/projects" />
+                    {/* <NavLink title="About" url="/about" /> */}
+                    <NavLink title="Projects" url="/projects" />
+                    {/* <NavLink title="In the News" url="/News" /> */}
                     {/* <NavLink title="Activism" url="/activism" /> */}
                 </div>
                 <div className="relative z-10 flex-auto text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellowgreen1 to-turquoise1">
                     {!onIndexPage && <Link href={'/'} passHref>
-                        <a>
+                        <a className="focus-visible:outline-none focus-visible:ring ring-offset-navy1 ring-offset-4 ring-red1 focus-visible:rounded-lg">
                             Steven Bash
                         </a>
                     </Link>}

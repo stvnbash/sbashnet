@@ -1,0 +1,23 @@
+## Portfolio Examples for inspiration
+- https://hxrsh.in/
+- https://marco.how
+- https://macarthur.me/
+- https://jakq277.github.io/
+- https://tomasmaillo.com/
+- https://shellbear.me/
+- https://nes.im/?recursion=true
+- https://styfle.dev/
+- https://leerob.io/
+- https://manuarora.in/
+- https://simple-developer-portfolio-website.vercel.app/
+- https://www.freecodecamp.org/news/how-to-build-a-portfolio-site-with-nextjs-tailwindcss/
+- https://jarin.me/
+- https://riccardozanutta.com/
+- https://jacekjeznach.com/
+- https://bruno-simon.com/
+- https://brittanychiang.com/
+- https://hashnode.com/post/30-web-developer-portfolios-to-inspire-you-cknfx6wdg069kxws1bjjv8mhw
+- https://webflow.com/blog/web-developer-portfolio-examples
+- https://alvarotrigo.com/blog/web-developer-portfolio-examples/
+
+---

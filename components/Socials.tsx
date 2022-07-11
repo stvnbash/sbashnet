@@ -54,7 +54,7 @@ export default function Socials() {
                         target='_blank'
                         rel='noreferrer'
                         // className='mr-5 hover:text-yellow1'
-                        className=' hover:text-yellow1'
+                        className=' hover:text-yellow1 focus-visible:outline-none focus-visible:ring ring-offset-navy1 ring-offset-4 ring-red1 focus-visible:rounded-lg'
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 0.8 }}
 
