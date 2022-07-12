@@ -4,7 +4,10 @@ import { compareDesc, format, parseISO } from 'date-fns'
 import { allPosts } from 'contentlayer/generated'
 import Modal2 from 'components/Modal2'
 import Router, { useRouter } from 'next/router'
-import { motion } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
+import PageTransition from 'components/PageTransition'
+import Meta from 'components/Meta'
+import { useState } from 'react'
 
 export async function getStaticProps() {
     const posts = allPosts.sort((a, b) => (a.id < b.id) ? 1 : -1)
@@ -28,6 +31,8 @@ function PostCard(post: any) {
 }
 
 export default function Projects({ posts }: any) {
+    const [modalopen, setModalopen] = useState(false)
+
     const variants = {
         hidden: {
             opacity: 0.0,
@@ -53,7 +58,9 @@ export default function Projects({ posts }: any) {
     }
 
     return (
-        <motion.div initial="hidden" whileInView="visible" variants={variants} className='mb-auto'>
+        // <motion.div initial="hidden" whileInView="visible" variants={variants} className='mb-auto'>
+        <div>
+            <Meta title={"Projects"} />
             {
                 router.query.project && (
                     <Modal2 title={post.title} description={post.description}>
@@ -63,14 +70,17 @@ export default function Projects({ posts }: any) {
                     </Modal2>
                 )
             }
-            <div id="__projects-modals"></div>
-            <h1 className='text-5xl mb-10 font-bold'>My Projects</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-                {posts.map((post: any, idx: any) => (
-                    <PostCard key={idx} {...post} />
-                ))}
-            </div>
-            {/* {console.log(posts)} */}
-        </motion.div>
+            <PageTransition animate={router.query.project ? false : true}>
+                <div id="__projects-modals"></div>
+                <h1 className='text-5xl mb-10 font-bold'>My Projects</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+                    {posts.map((post: any, idx: any) => (
+                        <PostCard key={idx} {...post} />
+                    ))}
+                </div>
+                {/* {console.log(posts)} */}
+                {/* </motion.div> */}
+            </PageTransition>
+        </div>
     )
 }

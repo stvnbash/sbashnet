@@ -39,8 +39,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       {/* <main className='max-w-3xl mx-auto p-10 h-0 flex flex-grow flex-col'> */}
       <main className='max-w-5xl mx-auto p-10 text-lg z-10'>
         <AnimatePresence exitBeforeEnter>
-          <Component {...pageProps} />
-          {/* <Component {...pageProps} key={router.asPath} /> */}
+          {/* <Component {...pageProps} /> */}
+          <Component {...pageProps} key={router.asPath} />
         </AnimatePresence>
       </main>
       <Footer1 />

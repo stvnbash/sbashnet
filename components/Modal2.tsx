@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import { motion, AnimatePresence } from "framer-motion"
 import Link from 'next/link'
 import { RiCloseCircleFill } from "react-icons/ri";
+import Meta from './Meta'
 
 export default function Modal({ children, title, description }: any) {
     let [isOpen, setIsOpen] = useState(true)
@@ -72,6 +73,7 @@ export default function Modal({ children, title, description }: any) {
             onClose={() => { setIsOpen(false); router.push('/projects'); }}
             className="relative z-50"
         >
+            <Meta title={title} />
             {/* Backdrop */}
 
             <motion.div key="background" initial="hidden" animate="visible" exit="exit" variants={background} className="fixed inset-0 bg-black/75" aria-hidden="true" />

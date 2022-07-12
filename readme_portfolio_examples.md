@@ -19,5 +19,6 @@
 - https://hashnode.com/post/30-web-developer-portfolios-to-inspire-you-cknfx6wdg069kxws1bjjv8mhw
 - https://webflow.com/blog/web-developer-portfolio-examples
 - https://alvarotrigo.com/blog/web-developer-portfolio-examples/
+- https://wallis.dev
 
 ---
