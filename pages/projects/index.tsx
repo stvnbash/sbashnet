@@ -29,8 +29,9 @@ function PostCard(post: any) {
                     <h2 className="text-lg font-normal line-clamp-4">{post.description}</h2>
                 </div>
                 {/* {(post.icons).map((icon:any) => {<icon.hekkio size={30}/>})} */}
-                <div className='mt-auto text-purple1'>
-                    {post.icons}<SiNextdotjs size={20} />
+                <div className='flex flex-row gap-2 mt-auto text-purple1'>
+                    <SiNextdotjs size={20} />
+                    <SiPython size={20} />
                 </div>
             </a>
         </Link>
