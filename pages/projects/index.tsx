@@ -20,6 +20,10 @@ export async function getStaticProps() {
 }
 
 function PostCard(post: any) {
+    const icons = {
+        "SiPython": SiPython, 
+        // SiGmail, SiTailwindcss, SiFramer, SiReact, SiPostman, SiNextdotjs
+    }
     return (
         <Link href={post.queryString} as={post.url}>
         {/* <Link href={post.url}> */}
@@ -32,6 +36,7 @@ function PostCard(post: any) {
                 <div className='flex flex-row gap-2 mt-auto text-purple1'>
                     <SiNextdotjs size={20} />
                     <SiPython size={20} />
+                    {post.icn}
                 </div>
             </a>
         </Link>

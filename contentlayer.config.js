@@ -24,6 +24,11 @@ export const Post = defineDocumentType(() => ({
       description: 'The id for sorting the post',
       required: true,
     },
+    icn: {
+      type: 'string',
+      description: 'The icon for sorting the post',
+      required: false,
+    },
   },
   computedFields: {
     url: {
