@@ -8,6 +8,8 @@ import { AnimatePresence, motion } from "framer-motion"
 import PageTransition from 'components/PageTransition'
 import Meta from 'components/Meta'
 import { useState } from 'react'
+import { SiPython, SiGmail, SiTailwindcss, SiFramer, SiReact, SiPostman, SiNextdotjs } from "react-icons/si";
+
 
 export async function getStaticProps() {
     const posts = allPosts.sort((a, b) => (a.id < b.id) ? 1 : -1)
@@ -20,10 +22,15 @@ export async function getStaticProps() {
 function PostCard(post: any) {
     return (
         <Link href={post.queryString} as={post.url}>
-            <a className="group hover:scale-105 focus-visible:outline-none focus-visible:ring focus:ring-purple1 font-bold p-6 rounded-3xl text-turquoise1 hover:text-turquoise1 bg-[#290066] hover:bg-[#4100A3] transition-all">
+        {/* <Link href={post.url}> */}
+            <a className="flex flex-col group hover:scale-105 focus-visible:outline-none focus-visible:ring focus:ring-purple1 font-bold p-6 rounded-3xl text-turquoise1 hover:text-turquoise1 bg-[#290066] hover:bg-[#4100A3] transition-all overflow-hidden">
                 <h1 className='text-2xl'>{post.title}</h1>
-                <div className="text-text1">
+                <div className="text-text1 mb-3">
                     <h2 className="text-lg font-normal line-clamp-4">{post.description}</h2>
+                </div>
+                {/* {(post.icons).map((icon:any) => {<icon.hekkio size={30}/>})} */}
+                <div className='mt-auto text-purple1'>
+                    {post.icons}<SiNextdotjs size={20} />
                 </div>
             </a>
         </Link>
@@ -62,12 +69,13 @@ export default function Projects({ posts }: any) {
         <div>
             <Meta title={"Projects"} />
             {
-                router.query.project && (
-                    <Modal2 title={post.title} description={post.description}>
+                router.query.project && 
+                (
+                    <AnimatePresence><Modal2 title={post.title} description={post.description} key="modal">
                         {/* <h1 className="mb-1 text-3xl font-bold">{post.title}</h1>
                         <p className='text-lg'>{post.description}</p> */}
                         <div className="cl-post-body" dangerouslySetInnerHTML={{ __html: post.body.html }} />
-                    </Modal2>
+                    </Modal2></AnimatePresence>
                 )
             }
             <PageTransition animate={router.query.project ? false : true}>
