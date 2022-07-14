@@ -29,6 +29,7 @@ module.exports = {
         yellowgreen1: "#C3DE33",
         green1: "#86E164",
         turquoise1: "#0CE8C7",
+        darkturquoise1: "#033A32",
         text1: "#FFFCEB",
       },
 

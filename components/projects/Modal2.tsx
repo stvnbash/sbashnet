@@ -88,7 +88,7 @@ export default function Modal({ children, post, setModalopen }: any) {
 
                 {/* <motion.div initial="hidden" animate="visible" exit="exit" variants={variants} className="flow-root w-full max-w-5xl h-full"> */}
                 <Dialog.Panel className="flow-root w-full max-w-5xl rounded-3xl bg-darkpurple1/50 text-text1 p-10 h-full overflow-y-auto">
-                    <button className="float-right text-turquoise1 hover:text-yellow1 rounded-lg focus-visible:outline-none focus-visible:ring ring-offset-navy1 ring-offset-0 ring-red1 transition-all" onClick={() => { router.push('/projects'); setModalopen("not open");}}><RiCloseCircleFill size={20} /></button>
+                    <button className="float-right text-turquoise1 hover:text-yellow1 rounded-lg focus-visible:outline-none focus-visible:ring ring-offset-navy1 ring-offset-0 ring-red1 transition-all" onClick={() => { router.push('/projects'); /*setModalopen("not open");*/}}><RiCloseCircleFill size={20} /></button>
                     <Dialog.Title className="mb-1 text-3xl font-bold">{post.title}</Dialog.Title>
                     <Dialog.Description className="text-lg">{post.description}</Dialog.Description>
                     <TechIcons post={post}/>

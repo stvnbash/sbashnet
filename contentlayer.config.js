@@ -24,9 +24,9 @@ export const Post = defineDocumentType(() => ({
       description: 'The id for sorting the post',
       required: true,
     },
-    icn: {
+    image: {
       type: 'string',
-      description: 'The icon for sorting the post',
+      description: 'The cover image',
       required: false,
     },
   },

@@ -31,7 +31,7 @@ export default function PostLayout({ post }:any) {
   const router = useRouter()
 
   return (
-    <Modal2 title={post.title} description={post.description}>
+    <Modal2 title={post.title} description={post.description} post={post}>
       {/* {console.log(post)} */}
           {/* <h1 className="mb-1 text-3xl font-bold">{post.title}</h1>
           <p className='text-lg'>{post.description}</p> */}
