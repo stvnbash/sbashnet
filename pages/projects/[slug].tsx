@@ -4,8 +4,8 @@ import { format, parseISO } from 'date-fns'
 import { allPosts } from 'contentlayer/generated'
 import Meta from 'components/Meta'
 import Modal from 'react-modal'
-import Modal1 from 'components/Modal1'
-import Modal2 from 'components/Modal2'
+import Modal1 from 'components/old/Modal1'
+import Modal2 from 'components/projects/Modal2'
 import { useRouter } from 'next/router'
 
 export async function getStaticPaths() {
