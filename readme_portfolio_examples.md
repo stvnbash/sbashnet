@@ -19,6 +19,10 @@
 - https://hashnode.com/post/30-web-developer-portfolios-to-inspire-you-cknfx6wdg069kxws1bjjv8mhw
 - https://webflow.com/blog/web-developer-portfolio-examples
 - https://alvarotrigo.com/blog/web-developer-portfolio-examples/
+- https://alvarotrigo.com/blog/web-developer-portfolio-templates/
+- https://www.templatemonster.com/landing-page-template/folio-personal-portfolio-landing-page-template-146486.html?aff=alvaro_blog
 - https://wallis.dev
+- https://maxschmitt.me/posts/next-js-cookies/
+- https://nirmalyaghosh.com/
 
 ---
