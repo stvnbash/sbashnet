@@ -24,5 +24,6 @@
 - https://wallis.dev
 - https://maxschmitt.me/posts/next-js-cookies/
 - https://nirmalyaghosh.com/
+- https://nuro.dev/
 
 ---
