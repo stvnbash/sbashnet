@@ -6,6 +6,7 @@ export default function PostCard({ post, setModalopen }: any) {
 
 
     return (
+        // change which Link is uncommented for redirecting the entire page (second) vs popup (first)
         <Link href={post.queryString} as={post.url}>
             {/* <Link href={post.url}> */}
             <a onClick={() => {setModalopen("open111");}} className="flex flex-col p-6 rounded-3xl group hover:scale-105 focus-visible:outline-none focus-visible:ring focus:ring-purple1 bg-[#290066] hover:bg-[#4100A3] transition-all overflow-hidden">

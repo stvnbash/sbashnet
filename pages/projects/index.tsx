@@ -79,7 +79,11 @@ export default function Projects({ posts }: any) {
                     </Modal2></AnimatePresence>
                 )
             }
+
+            {/* second and third lines are attempts at temporary fixs for bug causing page to reload when modal closed */}
             <PageTransition animate={router.query.project ? false : true}>
+            {/* <PageTransition animate={router.query.project ? true : true}> */}
+            {/* <PageTransition animate={router.query.project ? false : false}> */}
                 <div id="__projects-modals"></div>
                 <h1 className='text-5xl mb-10 font-bold'>My Projects</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
