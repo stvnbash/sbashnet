@@ -20,6 +20,7 @@ export default function Navbar() {
                     <NavLink title="Projects" url="/projects" />
                     {/* <NavLink title="In the News" url="/news" /> */}
                     <NavLink title="Activism" url="/activism" />
+                    <NavLink title="Celiac" url="/celiac" />
                 </div>
                 <div className="relative z-10 flex-auto text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellowgreen1 to-turquoise1">
                     {!onIndexPage && <Link href={'/'} passHref>
