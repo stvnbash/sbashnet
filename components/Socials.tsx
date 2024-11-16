@@ -1,4 +1,5 @@
-import { SiTwitter, SiInstagram, SiGithub, SiLinkedin, SiTelegram, SiStackoverflow } from "react-icons/si";
+import { SiInstagram, SiGithub, SiLinkedin, SiTelegram, SiStackoverflow, SiBluesky } from "react-icons/si";
+import { FaTwitter } from "react-icons/fa6";
 import { IoLogoVenmo } from "react-icons/io5";
 import { motion } from 'framer-motion'
 import Link from "next/link";
@@ -32,10 +33,15 @@ export default function Socials() {
                     icon: SiInstagram,
                     href: 'https://instagram.com/stvnbash',
                 },
+                // {
+                //     aria: 'Twitter',
+                //     icon: FaTwitter,
+                //     href: 'https://twitter.com/stvnbash',
+                // },
                 {
-                    aria: 'Twitter',
-                    icon: SiTwitter,
-                    href: 'https://twitter.com/stvnbash',
+                    aria: 'Bluesky',
+                    icon: SiBluesky,
+                    href: 'https://bsky.app/profile/stevenbash.bsky.social',
                 },
                 {
                     aria: 'Telegram',

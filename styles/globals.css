@@ -1,4 +1,26 @@
 @tailwind base;
+
+@layer base {
+  .cl-post-body h1 {
+    @apply text-2xl pt-5;
+  }
+  .cl-post-body h2 {
+    @apply text-xl pt-5;
+  }
+  .cl-post-body h3 {
+    @apply text-lg pt-5;
+  }
+  .cl-post-body ul {
+    @apply list-disc ml-5;
+  }
+  .cl-post-body br {
+    @apply m-5;
+  }
+  .cl-post-body a {
+    @apply underline;
+  }
+}
+
 @tailwind components;
 
 html,
