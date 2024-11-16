@@ -76,7 +76,7 @@ export default function Intro() {
                 <br />
                 <Socials />
                 <br />
-                <Link href={'/BashSteven_CV.pdf'} passHref>
+                <Link href={'/resume'} passHref>
                     <motion.a variants={subtitle} className="flex items-center gap-2 font-normal text-text1 inline-block rounded-lg hover:text-yellow1 transition-all text-lg focus-visible:outline-none focus-visible:ring ring-offset-navy1 ring-offset-4 ring-red1">
                         {/* <svg className="w-[40px] font-normal text-text1 inline-block rounded-lg hover:text-yellow1 transition-all text-lg focus-visible:outline-none focus-visible:ring ring-offset-navy1 ring-offset-4 ring-red1" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 4.5V25.5C6.5 26.0523 6.94772 26.5 7.5 26.5H22.5C23.0523 26.5 23.5 26.0523 23.5 25.5V7.91421C23.5 7.649 23.3946 7.39464 23.2071 7.20711L19.7929 3.79289C19.6054 3.60536 19.351 3.5 19.0858 3.5H7.5C6.94772 3.5 6.5 3.94772 6.5 4.5ZM16.5 12.5H9.5V10.5H16.5V12.5ZM20.5 15.5H9.5V13.5H20.5V15.5ZM9.5 18.5H20.5V16.5H9.5V18.5ZM20.5 21.5H9.5V19.5H20.5V21.5Z" fill="white"></path></svg> */}
                         <TiDocumentText size={20}/>
