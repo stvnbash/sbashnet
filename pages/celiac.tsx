@@ -6,7 +6,7 @@ import { getStaticProps } from './projects'
 export default function Index() {
     return (
         <PageTransition>
-            <Meta title={"Activism"} />
+            <Meta title={"Celiac"} />
             <h1 className='text-5xl mb-10 font-bold'>Celiac Disease</h1>
             <div className=''>
                 coming soon!
