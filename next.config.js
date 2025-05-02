@@ -1,7 +1,8 @@
 const { withContentlayer} = require('next-contentlayer')
 
 // const resumeURL = "https://1drv.ms/b/s!AsvAGOMj9b-tiZ0FaQ68uPVXy2RJFQ?e=Hb4FXL" // this is a direct url but onedrive isn't showing preview, only download button
-const resumeURL = "https://1drv.ms/b/s!AsvAGOMj9b-tiZ0FOvglVcRMWqO-Jw?embed=1&em=2" // this is a onedrive preview, meant for embedding
+const cvURL = "https://1drv.ms/b/s!AsvAGOMj9b-tiZ0FOvglVcRMWqO-Jw?embed=1&em=2" // this is a onedrive preview, meant for embedding
+const resumeURL = "https://1drv.ms/b/s!AsvAGOMj9b-ticELPBdTmA-vBeBhMg?embed=1&em=2"
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -9,6 +10,11 @@ const nextConfig = {
   async redirects() {
     return [
       // Basic redirect
+      {
+        source: '/cv',
+        destination: cvURL,
+        permanent: false,
+      },
       {
         source: '/resume',
         destination: resumeURL,
